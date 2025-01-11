@@ -1,0 +1,196 @@
+.work {
+  width: 100%;
+}
+
+.work_Container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 131px 75px;
+  gap: 44px;
+}
+
+.work_Container h1 {
+  width: 100%;
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px;
+}
+
+.work .work_Container P {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.6px;
+}
+
+.work_Container img {
+  width: 550px;
+  height: 286px;
+}
+
+.work .cards {
+  width: 100%;
+  display: inline-flex;
+  padding: 51px 408px 52px 408px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1b1b;
+}
+
+.work .cards .card1 {
+  margin-right: 114px;
+}
+
+.work .cards .card h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px;
+}
+
+.work .cards .card p {
+  color: #fff;
+
+  text-align: center;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.6px;
+}
+
+/* Vision */
+
+.work .content {
+  width: 100%;
+  flex-direction: column;
+}
+/**/
+.work .content .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20rem;
+  padding-top: 3rem;
+}
+
+.work .content .imageWrapper {
+  position: absolute;
+}
+
+.work .content .imageLeft {
+  position: relative;
+  z-index: 2;
+  left: -180px;
+  max-width: 100%;
+  border-right: none;
+}
+
+.work .content .imageRight {
+  position: relative;
+  z-index: 1;
+  left: 150px;
+  top: 50px;
+  max-width: 100%;
+}
+
+/**/
+
+.work .content .texts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 51px 408px 52px 408px;
+  margin-bottom: 104px;
+}
+
+.work .content .Image {
+  text-align: center;
+}
+
+.work .content img {
+  width: 463px;
+  height: 246.487px;
+}
+.work .content h1 {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px;
+  margin-bottom: 40px;
+}
+
+.work .content span {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.6px;
+  margin-bottom: 24px;
+}
+
+.work .content a {
+  color: #2d47ed;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.2px; /* 213.75% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  text-transform: uppercase;
+}
+
+.work .content p {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.2px;
+  margin-bottom: 88px;
+}
+
+.work .learn {
+  text-align: center;
+  padding-bottom: 103px;
+}
+.work .learn p {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.2px;
+  margin-bottom: 40px;
+}
+.work .relacionados {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.work .relacionados img {
+  width: 190.62px;
+  height: 98.86px;
+}

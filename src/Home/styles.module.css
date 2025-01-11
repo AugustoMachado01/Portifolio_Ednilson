@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.section_container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start; /* Alinha itens ao topo */
+  justify-content: center;
+  background-color: transparent;
+  margin-top: 89px;
+  padding: 20px;
+  gap: 81px;
+}
+
+.section_container .logo img {
+  width: 546px;
+  height: 751px;
+  border-radius: 8px;
+}
+
+.section_container .content {
+  width: 562px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Garante que o texto comece no topo */
+  align-items: flex-start; /* Alinha o texto à esquerda */
+  max-width: 600px; /* Limita a largura do conteúdo */
+  color: #fff; /* Cor do texto */
+}
+
+.section_container .content span {
+  color: #d7d7d7;
+  font-family: "Inter", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43.2px;
+
+  margin-bottom: 100px;
+}
+
+.section_container h1 {
+  color: #fff;
+
+  font-family: Inter;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 96px;
+  color: #fff; /* Cor do texto */
+}
+
+.section_container span {
+  color: #d7d7d7;
+  font-family: "Inter", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43.2px;
+
+  margin-bottom: 1.5rem;
+}
+
+.section_container p {
+  margin-top: 40px;
+  color: #fff;
+
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.2px;
+}
+
+/* Cards */
+
+.article {
+  padding-bottom: 10rem;
+}
+
+.worksSection {
+  color: #fff;
+  padding: 2rem;
+}
+
+.sectionTitle {
+  color: #fff;
+  font-family: "inter", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px;
+  margin-bottom: 2rem;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Garante que a imagem se ajuste */
+}
+
+.cardTitle {
+  color: #fff;
+  font-family: "Baskervville";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.cardDescription {
+  color: #d2d2d2;
+
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.2px;
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+
+  color: #2d47ed;
+
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.cardLink img {
+  width: 34.5px;
+  height: 11.046px;
+}
+
+.cardLink:hover {
+  color: #3d4cad;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: 1fr; /* Apenas uma coluna no mobile */
+  }
+}
+
+/* participação */
+.participationsSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7rem 2rem;
+  border-radius: 8px;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.participationText {
+  color: #d5d5d5;
+  font-family: "Epilogue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 0;
+}
+
+.iconsContainer {
+  flex: 2; /* Os ícones ocupam o lado direito */
+  display: flex;
+  justify-content: flex-end; /* Ícones alinhados à direita */
+  gap: 1rem; /* Espaçamento entre os ícones */
+}
+
+.participationItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  width: 70px; /* Tamanho do ícone */
+  height: 70px;
+}
+
+.participationItem span {
+  font-size: 0.875rem;
+  color: #fff;
+}
