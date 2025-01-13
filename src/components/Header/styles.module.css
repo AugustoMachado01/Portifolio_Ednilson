@@ -3,13 +3,10 @@
 }
 
 .work_Container {
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-
-  padding: 131px 75px;
-  gap: 44px;
+  padding: 130px 90px 130px 60px;
 }
 
 .work_Container h1 {
@@ -38,10 +35,9 @@
 
 .work .cards {
   width: 100%;
-  display: inline-flex;
-  padding: 51px 408px 52px 408px;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 51px 408px 52px 408px;
   background-color: #1b1b1b;
 }
 
@@ -184,10 +180,15 @@
   line-height: 34.2px;
   margin-bottom: 40px;
 }
+
 .work .relacionados {
   display: flex;
   justify-content: center;
   gap: 48px;
+}
+
+.work .relacionados a {
+  text-decoration: none;
 }
 
 .work .relacionados img {

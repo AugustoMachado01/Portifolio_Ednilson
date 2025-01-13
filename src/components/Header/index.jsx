@@ -1,5 +1,5 @@
+import { Link, useLocation } from "react-router-dom";
 import styles from "./styles.module.css";
-
 import Ministery from "../../assets/ministerio-image.png";
 import Evoluim from "../../assets/evolium-image.png";
 import Feito from "../../assets/feitoemangola-image.png";
@@ -7,51 +7,71 @@ import Tradulo from "../../assets/tradulo-image.png";
 
 import Image1 from "../../assets/Screenshot1.png";
 import Image2 from "../../assets/Screenshot2.png";
+import ImageEv1 from "../../assets/evolium1.png";
+import ImageEv2 from "../../assets/evolium2.png";
+import ImageFeito1 from "../../assets/feito1.png";
+import ImageFeito2 from "../../assets/feito2.png";
+import ImageTradulo1 from "../../assets/tradulo1.png";
+import ImageTradulo2 from "../../assets/tradulo2.png";
 
-export function Container({ id }) {
+export function Container() {
+  const location = useLocation(); // Captura a URL atual
+  const currentPath = location.pathname; // Pega apenas o pathname
+
   const trabalhos = [
     {
-      id: 1,
+      slug: "/trabalho/ministerio-do-planeamento",
       titulo: "MINISTÉRIO DO PLANEAMENTO",
+      link: "https://www.mep.gov.ao/",
       descricao: "Designer de UI/UX • Integrante do Projeto",
       imagens: [Ministery, Image1, Image2],
-      link: "/trabalhos/ministerio-do-planeamento",
     },
     {
-      id: 2,
+      slug: "/trabalho/evolium",
       titulo: "EVOLIUM",
+      link: "https://evolium.ao/home/",
       descricao: "Projeto de Plataforma Digital",
-      imagens: [Evoluim],
-      link: "/trabalhos/evolium",
+      imagens: [Evoluim, ImageEv1, ImageEv2],
     },
     {
-      id: 3,
+      slug: "/trabalho/feito-em-angola",
       titulo: "FEITO EM ANGOLA",
+      link: "https://feitoemangola.gov.ao/",
       descricao: "Projeto Nacional",
-      imagens: [Feito],
-      link: "/trabalhos/feito-em-angola",
+      imagens: [Feito, ImageFeito1, ImageFeito2],
     },
     {
-      id: 4,
+      slug: "/trabalho/tradu-lo",
       titulo: "Tradu-lo",
+      link: "https://tradu-lo.com/",
       descricao: "Projeto Nacional",
-      imagens: [Tradulo],
-      link: "/trabalhos/feito-em-angola",
+      imagens: [Tradulo, ImageTradulo1, ImageTradulo2],
     },
   ];
 
-  const trabalhoAtual = trabalhos.filter(
-    (trabalho) => trabalho.id !== parseInt(id)
+  // Encontre o trabalho correspondente ao pathname
+  const trabalhoAtual = trabalhos.find(
+    (trabalho) => trabalho.slug === currentPath
   );
+
+  // Filtra os outros trabalhos para a seção "Leia mais"
+  const trabalhosRelacionados = trabalhos.filter(
+    (trabalho) => trabalho.slug !== currentPath
+  );
+
+  // Caso não encontre o trabalho, exibe uma mensagem de erro
+  if (!trabalhoAtual) {
+    return <p>Trabalho não encontrado.</p>;
+  }
 
   return (
     <section className={styles.work}>
       <section className={styles.work_Container}>
         <div>
-          <h1>MINISTÉRIO DO PLANEAMENTO</h1>
-          <p>Designer de UI/UX • Integrante do Projeto</p>
+          <h1>{trabalhoAtual.titulo}</h1>
+          <p>{trabalhoAtual.descricao}</p>
         </div>
-        <img src={Ministery} alt="sd" />
+        <img src={trabalhoAtual.imagens[0]} alt={trabalhoAtual.titulo} />
       </section>
 
       <section className={styles.cards}>
@@ -65,17 +85,22 @@ export function Container({ id }) {
           <p>Evolium(Angola)</p>
         </div>
       </section>
+
       <section className={styles.content}>
         <div className={styles.container}>
           <div className={styles.imageWrapper}>
             <img
-              src={Image1}
+              src={trabalhoAtual.imagens[1]}
               alt="Mensagem do Ministro"
               className={styles.imageLeft}
             />
           </div>
           <div className={styles.imageWrapper}>
-            <img src={Image2} alt="Quem é Quem" className={styles.imageRight} />
+            <img
+              src={trabalhoAtual.imagens[2]}
+              alt="Quem é Quem"
+              className={styles.imageRight}
+            />
           </div>
         </div>
 
@@ -110,18 +135,18 @@ export function Container({ id }) {
           </p>
 
           <span>Ver o site</span>
-          <a href="">Ministério do planeamento</a>
+          <a href="">{trabalhoAtual.titulo}</a>
         </div>
       </section>
 
       <section className={styles.learn}>
         <p>Leia mais sobre meus estudos de caso</p>
         <div className={styles.relacionados}>
-          {trabalhoAtual.map((trabalho) => (
-            <div key={trabalho.id}>
+          {trabalhosRelacionados.map((trabalho) => (
+            <Link to={trabalho.slug} key={trabalho.slug}>
               <img src={trabalho.imagens[0]} alt={trabalho.titulo} />
               <h3>{trabalho.titulo}</h3>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

@@ -1,4 +1,4 @@
-.section_container {
+/* .section_container {
   width: 100%;
   height: 113px;
   background-color: #000;
@@ -21,4 +21,95 @@ h3 {
 }
 .section_container ul a {
   padding-right: 40px;
+} */
+
+.section_container {
+  width: 100%;
+  height: 113px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.section_container h3 {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links a {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav_links a:hover {
+  color: #00d1b2;
+}
+
+.nav_links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #00d1b2;
+  transition: width 0.3s ease;
+}
+
+.nav_links a:hover::after {
+  width: 100%;
+}
+
+.menu_button {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu_button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .menu_button {
+    display: block;
+  }
+
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .nav_links.show_menu {
+    display: flex;
+  }
 }

@@ -10,7 +10,7 @@ export function Footer() {
       </div>
       <div className={styles.content}>
         <img src={ImageLink} alt="linkedin" />
-        <a href="">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/ednilsonaraujo/">LinkedIn</a>
       </div>
     </section>
   );

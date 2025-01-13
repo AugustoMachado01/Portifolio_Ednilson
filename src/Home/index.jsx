@@ -20,31 +20,28 @@ export function Home() {
       description:
         "Redesign do website do Ministério do Planeamento de Angola, com o objetivo de modernizar e otimizar a experiência dos usuários na plataforma digital do órgão.",
       image: ImageMinisterio,
-      link: "/trabalho/ministery",
+      link: "/trabalho/ministerio-do-planeamento",
     },
     {
       title: "EVOLIUM",
       description:
         "Evolium Angola, uma plataforma inovadora voltada para a transformação digital de negócios angolanos.",
-      // image: "/path/to/evolium-image.png",
       image: ImageEvolium,
-      link: "/trabalho/ministery",
+      link: "/trabalho/evolium",
     },
     {
       title: "FEITO EM ANGOLA",
       description:
         "Projeto Feito em Angola, uma iniciativa voltada para ajudar a certificar produtos nacionais e incentivar o consumo de produtos locais.",
-      // image: "/path/to/feitoemangola-image.png",
       image: ImageFeito,
-      link: "/trabalho/ministery",
+      link: "/trabalho/feito-em-angola",
     },
     {
       title: "TRADU-LO",
       description:
         "Um projeto que constrói a tradução de documentos corporativos e técnicos com precisão.",
-      // image: "/path/to/tradulo-image.png",
       image: ImageTradulo,
-      link: "/trabalho/ministery",
+      link: "/trabalho/tradu-lo",
     },
   ];
 

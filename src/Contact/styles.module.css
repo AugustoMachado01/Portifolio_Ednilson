@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 85px 128px 85px 128px;
+  gap: 159px;
+}
+
+.container img {
+  width: 470px;
+  height: 646.465px;
+}
+
+.container .message {
+  width: 100%;
+}
+
+.container .message label {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container .message button {
+  width: 100%;
+  display: flex;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #fff;
+  font-family: "Inter", serif;
+  color: #0e0e0e;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container .message textarea[name="sms"] {
+  height: 200px;
+}
+
+.container .message textarea[name="name"],
+.container .message textarea[name="email"] {
+  height: 56px;
+}
+
+.container .message textarea {
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  resize: none;
+  box-sizing: border-box;
+
+  border-radius: 8px;
+  border: 1px solid #7a7a7a;
+
+  background: #1e1e1e;
+
+  margin: 16px 0px;
+}
