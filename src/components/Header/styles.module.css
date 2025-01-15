@@ -261,15 +261,46 @@
     padding: 40px 0px;
   }
 }
-
-/* .work .cards .card p{
-  font-size: 12px;  
-  line-height: 16px;
-} */
-
+ 
 
 @media (max-width: 768px) {
+  .work .cards {
+    padding: 44px 36 30px 36px; 
+   
+  }
+  
+  .work .cards .card1 {
+    margin-right: 114px;
+  }
+  
+  .work .cards .card h3 {
+    font-size: 16px;
+   
+  }
+  
+  .work .cards .card p {
+    text-align: center; 
+    font-size: 12px;  
+    line-height: 16px; 
+  }
+
+  .work .content .imageWrapper {
+    display: flex;
+    justify-content: center;
+    padding-right: 90px;
+  
+  }
+
+  .work .content .imageLeft{
+    left: -20rem;
+  /* right: 1000px; */
+  background-color: #2d47ed;
+  }
+  .work .content .imageRight{
+    left: 5rem; 
+  }
   .work .work_Container h1{
+    width: 278px;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
