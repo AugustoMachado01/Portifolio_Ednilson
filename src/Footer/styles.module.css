@@ -27,3 +27,19 @@
   color: #fff;
   margin-left: 8px;
 }
+
+
+@media(max-width: 768px){
+  .section_container{
+    height: auto;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 64px 0px 64px 24px;
+  }
+
+  .section_container .content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
