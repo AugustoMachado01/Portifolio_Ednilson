@@ -60,7 +60,7 @@ export function Home() {
         </div>
         <section className={styles.content}>
           <div>
-            <h1>
+            <h1>Z
               Hi,
               <span>
                 <img src={ImageHi} alt="hi" />

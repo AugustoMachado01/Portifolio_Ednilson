@@ -14,7 +14,7 @@ import ImageFeito2 from "../../assets/feito2.png";
 import ImageTradulo1 from "../../assets/tradulo1.png";
 import ImageTradulo2 from "../../assets/tradulo2.png";
 
-export function Container() {
+export function Container({ papel, eq, vision, problem, process, solucion }) {
   const location = useLocation(); // Captura a URL atual
   const currentPath = location.pathname; // Pega apenas o pathname
 
@@ -78,11 +78,11 @@ export function Container() {
         <div className={`${styles.card} ${styles.card1}`}>
           <h3>Papel</h3>
           <p>Designer de UI/UX</p>
-          <p>integrante do Projeto</p>
+          <p>{papel}</p>
         </div>
         <div className={styles.card}>
           <h3>Equipe</h3>
-          <p>Evolium(Angola)</p>
+          <p>{eq}</p>
         </div>
       </section>
 
@@ -106,33 +106,13 @@ export function Container() {
 
         <div className={styles.texts}>
           <h1 className={styles.title}>Visão Geral</h1>
-          <p>
-            O projeto visou modernizar a experiência digital do Ministério do
-            Planeamento de Angola, promovendo maior eficiência na comunicação
-            institucional e acessibilidade para cidadãos e colaboradores.
-          </p>
+          <p>{vision}</p>
           <h1>Problema</h1>
-          <p>
-            A plataforma anterior apresentava navegação confusa, design
-            desatualizado e falta de funcionalidades que atendiam às
-            necessidades específicas dos usuários, prejudicando o acesso às
-            informações e serviços.
-          </p>
+          <p>{problem}</p>
           <h1>Processo de Design</h1>
-          <p>
-            Iniciamos com uma pesquisa detalhada para compreender as
-            necessidades dos usuários e objetivos do Ministério. Foram
-            realizados workshops de co-criação, testes de usabilidade e análises
-            heurísticas. O design foi iterado em ciclos, garantindo soluções
-            centradas no usuário e alinhadas aos valores institucionais.
-          </p>
+          <p>{process}</p>
           <h1>Solução</h1>
-          <p>
-            Implementamos um redesign completo da interface, priorizando um
-            layout responsivo, navegação intuitiva e integração de
-            funcionalidades essenciais, como busca otimizada e painéis
-            interativos para acesso rápido a dados e relatórios.
-          </p>
+          <p>{solucion}</p>
 
           <span>Ver o site</span>
           <a href="">{trabalhoAtual.titulo}</a>

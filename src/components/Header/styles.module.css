@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 .work {
   width: 100%;
 }
@@ -31,6 +33,8 @@
 .work_Container img {
   width: 550px;
   height: 286px;
+
+  object-fit: cover;
 }
 
 .work .cards {
@@ -79,7 +83,7 @@
   justify-content: center;
   width: 100%;
   padding-bottom: 20rem;
-  padding-top: 3rem;
+  padding-top: 3rem; 
 }
 
 .work .content .imageWrapper {
@@ -102,20 +106,15 @@
   max-width: 100%;
 }
 
-/**/
-
 .work .content .texts {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 51px 408px 52px 408px;
-  margin-bottom: 104px;
+    padding: 51px 212px 52px 212px;
+    margin-bottom: 104px; 
 }
 
-.work .content .Image {
-  text-align: center;
-}
-
+ 
 .work .content img {
   width: 463px;
   height: 246.487px;
@@ -191,7 +190,154 @@
   text-decoration: none;
 }
 
+.work .relacionados h3 {
+  color: #ffffff;
+
+  text-align: center;
+  font-family: "Baskervville";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
 .work .relacionados img {
   width: 190.62px;
   height: 98.86px;
+}
+
+
+/* Configurações gerais para telas pequenas */
+@media (max-width: 1200px) {
+  .work .work_Container { 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work_Container h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+ 
+  }
+
+  .work .work_Container P {
+  text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+ 
+  }
+
+ 
+
+  .work .work_Container{
+    /* padding: 0px; */
+  }
+
+  .work .content .imageLeft{
+    left: -150px; 
+  }
+
+  
+  .work .content .container img{
+    width: 400px;
+    height: auto;
+
+  }
+
+
+    .work .work_Container img{
+      width: auto;
+      height: auto;
+      text-align: center;
+    }
+
+
+
+  .work .cards{ 
+    padding: 40px 0px;
+  }
+}
+
+/* .work .cards .card p{
+  font-size: 12px;  
+  line-height: 16px;
+} */
+
+
+@media (max-width: 768px) {
+  .work .work_Container h1{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .work .work_Container p{ 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33.6px;
+  }
+
+  .work .work_Container img{
+    width: 450px;
+  }
+
+  .work .content .texts{
+    width: 100%; 
+    padding: 0px 30px;
+  }
+
+  .work .content .texts h1{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33.6px;
+  }
+
+  .work .content .texts span{
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 34.2px;
+  }
+
+  .work .content{
+    display: flex;
+    justify-content: center;
+  }
+
+  .work .content .imageLeft{
+    left: 0px; 
+  }
+
+
+  .work .content .container img{
+    width: 182.719px;
+    height: auto;
+
+
+  }
+
+   .work .relacionados{
+    flex-direction: column;
+   }
+
+   .work ,.relacionados h3 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.2px;
+   }
+}
+
+@media (max-width: 480px) {
+  .work .work_Container img{
+    width: 324px;
+    height: 168px;
+  }
 }
