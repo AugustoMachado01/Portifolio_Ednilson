@@ -1,4 +1,3 @@
-/* .section_container mantém a estrutura com display flex */
 .section_container {
   width: 100%;
   height: 113px;
@@ -6,18 +5,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
-  position: relative;
   padding: 0px 40px;
+  position: relative;
 }
 
-.section_container h3{
+.section_container h3 {
   color: #fff;
-  font-family: "Inter",serif;
+  font-family: "Inter", serif;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 /* Navegação */
@@ -35,7 +31,6 @@
   font-family: "Inter", serif;
   font-size: 16px;
   text-decoration: none;
-  position: relative;
   transition: color 0.3s ease;
 }
 
@@ -75,7 +70,7 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .section_container h3{
+  .section_container h3 {
     font-size: 16px;
   }
 
@@ -84,31 +79,69 @@
     display: block;
   }
 
-  /* Estilizar o menu para aparecer do lado direito */
-  .nav_links a{
-    color: #FFF;
-
-font-family: "Inter", serif;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 145%;
-  }
+  /* Esconde os links do menu por padrão */
   .nav_links {
-    display: none;
+    /* display: none;
     flex-direction: column;
     gap: 10px;
     background: #101523;
     position: absolute;
     top: 100%;
-    right: 20px; /* Menu vai para a direita */
-    width: auto; /* Ajuste o tamanho do menu conforme necessário */
+    right: 20px;
+    width: auto;
     padding: 10px 20px;
-    z-index: 10;
+    z-index: 10; */
   }
 
   /* Quando o menu estiver aberto, ele será mostrado */
   .nav_links.show_menu {
     display: flex;
+  }
+
+  /* Menu de Tela Cheia (Mobile) */
+  .menu_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+  }
+
+  .show_menu {
+    display: flex;
+  }
+
+  /* Botão do Menu */
+  .menu_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 20;
+  }
+
+  .menu_button .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+  }
+
+  .menu_open .line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+    background-color: #f00;
+  }
+
+  .menu_open .line:nth-child(2) {
+    transform: rotate(-45deg) translateY(-10px);
+    background-color: #f00;
   }
 }

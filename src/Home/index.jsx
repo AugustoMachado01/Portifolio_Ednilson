@@ -1,3 +1,7 @@
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import styles from "./styles.module.css";
 import ImageHome from "../assets/Ednilson.png";
 import ImageHi from "../assets/SVG.svg";
@@ -6,12 +10,12 @@ import ImageEvolium from "../assets/evolium-image.png";
 import ImageFeito from "../assets/feitoemangola-image.png";
 import ImageTradulo from "../assets/tradulo-image.png";
 import ImageVetor from "../assets/Vector.svg";
-
 import Icon1 from "../assets/evolium-logo-svg.svg";
 import Icon2 from "../assets/plantify.svg";
 import Icon3 from "../assets/Ocaso.svg";
 import Icon4 from "../assets/Field.png";
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
 
 export function Home() {
   const works = [
@@ -52,23 +56,28 @@ export function Home() {
     { name: "Field", icon: Icon4 },
   ];
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <section>
+    <section data-aos="fade-up">
       <div className={styles.section_container}>
         <div className={styles.logo}>
           <img src={ImageHome} alt="Ednilson" />
         </div>
         <section className={styles.content}>
           <div>
-            <h1>Z
+            <h1 >
               Hi,
-              <span>
-                <img src={ImageHi} alt="hi" />
-                <br />
-              </span>
-              I'm Ednilson Araújo
-            </h1>
-            <span>UX/UI Designer</span>
+              <img src={ImageHi} alt="hi" />
+            </h1>       
+            <h1>
+            <h1 className={styles.blinking_scale}>
+               I'm Ednilson Araújo
+             </h1>
+              </h1> 
+           <span>UX/UI Designer</span>
           </div>
 
           <div>
@@ -90,7 +99,7 @@ export function Home() {
       </div>
 
       <div className={styles.article}>
-        <section className={styles.participationsSection}>
+        <section className= {styles.participationsSection}>
           <div className={styles.textContainer}>
             <p className={styles.participationText}>Participação</p>
           </div>
@@ -103,7 +112,7 @@ export function Home() {
           </div>
         </section>
 
-        <section className={styles.worksSection}>
+        <section className={styles.worksSection} data-aos="fade-up">
           <h2 className={styles.sectionTitle}>Trabalhos</h2>
           <div className={styles.cardsContainer}>
             {works.map((work, index) => (

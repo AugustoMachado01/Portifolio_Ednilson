@@ -13,25 +13,23 @@ export function Header() {
     <section className={styles.section_container}>
       <h3>Ednilson Araujo</h3>
       <button
-        className={styles.menu_button}
+        className={`${styles.menu_button} ${isMenuOpen ? styles.menu_open : ""}`}
         onClick={toggleMenu}
         aria-label="Toggle navigation"
       >
-        ☰
+        <span className={styles.line}></span>
+        <span className={styles.line}></span>
       </button>
-      <ul
-        className={`${styles.nav_links} ${isMenuOpen ? styles.show_menu : ""}`}
+      <div
+        className={`${styles.menu_container} ${isMenuOpen ? styles.show_menu : ""}`}
+        onClick={toggleMenu}
       >
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/">Resumo</Link>
-        </li>
-        <li>
-          <Link to="/contacto">Contactar</Link>
-        </li>
-      </ul>
+        <ul className={styles.nav_links}>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/resume">Resume</Link></li>
+          <li><Link to="/contact">Contacto</Link></li>
+        </ul>
+      </div>
     </section>
   );
 }

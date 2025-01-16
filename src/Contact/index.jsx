@@ -1,10 +1,17 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import styles from "./styles.module.css";
 
 import Logo from "../assets/Ednilson.png";
+import { useEffect } from "react";
 
 export function Contact() {
+   useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
   return (
-    <section className={styles.container}>
+    <section className={styles.container}  data-aos="fade-up">
       <div>
         <img src={Logo} alt="Ednilson" />
       </div>
