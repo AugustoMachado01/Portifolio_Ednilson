@@ -1,3 +1,4 @@
+/* .section_container mantém a estrutura com display flex */
 .section_container {
   width: 100%;
   height: 113px;
@@ -5,15 +6,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 40px;
-  position: relative;
+  padding: 0px 74px;
+  position: relative;   
 }
 
-.section_container h3 {
+.section_container h3{
   color: #fff;
-  font-family: "Inter", serif;
+  font-family: "Inter",serif;
   font-size: 24px;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
 }
 
 /* Navegação */
@@ -31,6 +34,7 @@
   font-family: "Inter", serif;
   font-size: 16px;
   text-decoration: none;
+  position: relative;
   transition: color 0.3s ease;
 }
 
@@ -79,20 +83,6 @@
     display: block;
   }
 
-  /* Esconde os links do menu por padrão */
-  .nav_links {
-    /* display: none;
-    flex-direction: column;
-    gap: 10px;
-    background: #101523;
-    position: absolute;
-    top: 100%;
-    right: 20px;
-    width: auto;
-    padding: 10px 20px;
-    z-index: 10; */
-  }
-
   /* Quando o menu estiver aberto, ele será mostrado */
   .nav_links.show_menu {
     display: flex;
@@ -100,6 +90,7 @@
 
   /* Menu de Tela Cheia (Mobile) */
   .menu_container {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -111,6 +102,17 @@
     justify-content: center;
     align-items: center;
     z-index: 15;
+  }
+  .menu_container .nav_links{
+    width: 100%; 
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding-left: 75px;
+  }
+
+  .menu_container .nav_links a {
+    font-size: 40px;
   }
 
   .show_menu {

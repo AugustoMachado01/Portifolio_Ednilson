@@ -27,7 +27,7 @@ export function Header() {
         <ul className={styles.nav_links}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/resume">Resume</Link></li>
-          <li><Link to="/contact">Contacto</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
         </ul>
       </div>
     </section>

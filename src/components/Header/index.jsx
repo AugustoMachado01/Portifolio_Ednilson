@@ -68,8 +68,8 @@ export function Container({ papel, eq, vision, problem, process, solucion }) {
     <section className={styles.work}>
       <section className={styles.work_Container}>
         <div>
-          <h1>{trabalhoAtual.titulo}</h1>
-          <p>{trabalhoAtual.descricao}</p>
+          <p className={styles.title}>{trabalhoAtual.titulo}</p>
+          <p className={styles.paragraph}>{trabalhoAtual.descricao}</p>
         </div>
         <img src={trabalhoAtual.imagens[0]} alt={trabalhoAtual.titulo} />
       </section>

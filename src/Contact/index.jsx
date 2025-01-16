@@ -10,6 +10,8 @@ export function Contact() {
    useEffect(() => {
       AOS.init({ duration: 1000 });
     }, []);
+
+    
   return (
     <section className={styles.container}  data-aos="fade-up">
       <div>

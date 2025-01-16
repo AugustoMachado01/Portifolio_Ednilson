@@ -8,31 +8,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem 40px;
+  padding: 6rem 75px;
+  gap: 100px;
 }
 
-.work_Container h1 {
-  width: 100%;
-  color: #fff;
-  font-family: "Inter", serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.6px;
-}
-
-.work .work_Container P {
+.work_Container .title { 
   color: #fff;
   font-family: "Inter", serif;
   font-size: 24px;
+  font-style: normal;
+  font-weight: 7  00;
+  line-height: 33.6px; 
+}
+
+.work .work_Container .paragraph {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 33.6px;
 }
 
 .work_Container img {
-  width: 550px;
-  height: 286px;
+  width: 700px;
+  height: 386px;
 
   object-fit: cover;
 }
