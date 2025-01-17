@@ -245,14 +245,6 @@
     gap: 0px;
     
   }
-/* 
-  .section_container {
-    width: 100%;
-    display: flex; 
-    padding: 4rem 75px;
-    gap: 40px;
-  } */
- 
 
   .section_container .logo {
     width: 100%; 
@@ -320,9 +312,7 @@
 
 /* Para telas menores que 768px */
 @media (max-width: 768px) {
-  .section_container .logo img {
-    /* max-width: 80%; */
-  }
+   
 
   .section_container h1 {
     font-size: 28px;
@@ -365,6 +355,29 @@
 }
 
 @media (max-width: 768px) {
+  .section_container{
+    padding: 4px 25px;
+
+  }
+
+  .section_container .logo{
+    margin-bottom: 41px;
+  }
+
+
+  .worksSection {   
+    color: #fff;
+    padding: 2rem 25px;
+  }
+
+  .participationsSection { 
+    padding: 2rem 25px;   
+  }
+
+  .participationsSection .iconsContainer{
+    margin-top: 10px;
+  }
+
   .cardsContainer {
     grid-template-columns: 1fr;
     gap: 1rem;

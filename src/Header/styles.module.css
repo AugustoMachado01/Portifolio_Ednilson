@@ -74,6 +74,10 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
+  .section_container {
+    padding: 0px 24px;  
+  }
+  
   .section_container h3 {
     font-size: 16px;
   }
@@ -146,4 +150,7 @@
     transform: rotate(-45deg) translateY(-10px);
     background-color: #f00;
   }
+
+
+
 }
