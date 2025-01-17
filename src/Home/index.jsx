@@ -14,6 +14,8 @@ import Icon1 from "../assets/evolium-logo-svg.svg";
 import Icon2 from "../assets/plantify.svg";
 import Icon3 from "../assets/Ocaso.svg";
 import Icon4 from "../assets/Field.png";
+import Icon5 from "../assets/tugagil.png";
+import Icon6 from "../assets/game.png";
 import { Link } from "react-router-dom";
 import { useEffect } from 'react';
 
@@ -50,10 +52,13 @@ export function Home() {
   ];
 
   const participations = [
-    { name: "Evolum", icon: Icon1 },
+    { name: "Field", icon: Icon4 },
     { name: "iPlanify", icon: Icon2 },
     { name: "OCASO", icon: Icon3 },
-    { name: "Field", icon: Icon4 },
+    { name: "Tuga", icon: Icon5 },
+    { name: "Evolum", icon: Icon1 },
+    { name: "Game", icon: Icon6 },
+  
   ];
 
   useEffect(() => {
