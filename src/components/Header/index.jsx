@@ -67,7 +67,7 @@ export function Container({ papel, eq, vision, problem, process, solucion }) {
   return (
     <section className={styles.work}>
       <section className={styles.work_Container}>
-        <div>
+        <div className={styles.work_content}>
           <p className={styles.title}>{trabalhoAtual.titulo}</p>
           <p className={styles.paragraph}>{trabalhoAtual.descricao}</p>
         </div>
