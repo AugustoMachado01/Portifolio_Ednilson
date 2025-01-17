@@ -75,7 +75,7 @@ export function Home() {
           <div>
             <h1 >
               Hi,
-              <img src={ImageHi} alt="hi" />
+              <img  className={styles.blinking_scale} src={ImageHi} alt="hi" />
             </h1>       
             <h1>
             <h1 className={styles.blinking_scale}>
