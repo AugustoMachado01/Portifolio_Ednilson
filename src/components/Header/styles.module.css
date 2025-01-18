@@ -215,9 +215,11 @@
 
 
 .work .relacionados img {
-  height: 98.864px;
+  width: 300px;
+  height: auto;
+  /* height: 98.864px;
   flex-shrink: 0;
-  align-self: stretch;
+  align-self: stretch; */
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
