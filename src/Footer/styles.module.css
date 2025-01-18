@@ -11,6 +11,12 @@
   padding: 0px 75px;
 }
 
+
+.section_container .footer p{
+  text-decoration: none;
+
+}
+
 .section_container p {
   font-family: "Inter", serif;
   font-size: 14px;

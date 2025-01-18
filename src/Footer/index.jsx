@@ -4,7 +4,7 @@ import ImageLink from "../assets/Link.svg";
 export function Footer() {
   return (
     <section className={styles.section_container}>
-      <div>
+      <div className={styles.footer}>
         <p>CONTACTO: +244 934187530</p>
         <p>Email: araujoednilson9@gmail.com</p>
       </div>
