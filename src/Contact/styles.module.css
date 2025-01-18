@@ -37,6 +37,7 @@
   background: #fff;
   font-family: "Inter", serif;
   color: #0e0e0e;
+  border: none;
 
   cursor: pointer;
 
@@ -44,6 +45,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.container .message button:hover{
+  background-color: #ccc;
 }
 
 .container .message textarea:focus {
