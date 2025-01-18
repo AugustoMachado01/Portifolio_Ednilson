@@ -36,6 +36,7 @@
 }
 
 .section_container .content a {
+  font-family: "Inter", serif;
   color: #fff;
   margin-left: 8px;
 }

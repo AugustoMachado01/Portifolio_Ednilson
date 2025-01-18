@@ -4,6 +4,8 @@
   justify-content: space-evenly;
   padding: 85px 128px 85px 128px;
   gap: 159px;
+
+  overflow: hidden;
 }
 
 .container img {
@@ -67,6 +69,7 @@
 }
 
 .container .message textarea {
+  font-family: "Inter", sans-serif;
   color: #fff;
   width: 100%;
   display: flex;
