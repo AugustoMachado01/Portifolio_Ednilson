@@ -14,10 +14,7 @@
 }
 
 
-.section_container .footer p{
-  text-decoration: none;
-
-}
+ 
 
 .section_container p ,  
 .section_container p span{
@@ -27,6 +24,10 @@
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 10px;
+
+  text-decoration: none;  
+  border-bottom: none;  
+  -webkit-text-decoration: none;
 }
 
 .section_container .content {
