@@ -5,8 +5,8 @@ export function Footer() {
   return (
     <section className={styles.section_container}>
       <div className={styles.footer}>
-        <p>CONTACTO: +244 934187530</p>
-        <p>Email: araujoednilson9@gmail.com</p>
+        <p>CONTACTO: <span> +244 934187530</span></p>
+        <p>Email: <span>araujoednilson9@gmail.com</span></p>
       </div>
       <div className={styles.line}></div>
       <div className={styles.content}>

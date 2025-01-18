@@ -17,7 +17,8 @@
 
 }
 
-.section_container p {
+.section_container p ,
+.section_container p span{
   font-family: "Inter", serif;
   font-size: 14px;
   font-style: normal;
@@ -46,6 +47,10 @@
     align-items: flex-start;
     padding: 64px 24px 64px 24px;
     gap: 30px;
+  }
+
+  .section_container p span{
+    display: block;
   }
 
   .section_container .content {
