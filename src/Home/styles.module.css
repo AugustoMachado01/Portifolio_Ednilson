@@ -383,4 +383,12 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
+  .cardsContainer  .card .cardTitle{
+    font-size: 19px;
+  }
+
+  .cardsContainer  .card .cardDescription{
+    font-size: 16.5px;
+  }
 }

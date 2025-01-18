@@ -8,6 +8,7 @@ export function Footer() {
         <p>CONTACTO: +244 934187530</p>
         <p>Email: araujoednilson9@gmail.com</p>
       </div>
+      <div className={styles.line}></div>
       <div className={styles.content}>
         <img src={ImageLink} alt="linkedin" />
         <a href="https://www.linkedin.com/in/ednilsonaraujo/">LinkedIn</a>
