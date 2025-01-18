@@ -61,6 +61,7 @@
 }
 
 .container .message textarea {
+  color: #fff;
   width: 100%;
   display: flex;
   padding: 16px;
@@ -75,7 +76,7 @@
 
   background: #1e1e1e;
 
-  /* margin: 16px 0px; */
+  margin: 16px 0px;
 }
 
 @media (max-width: 1024px) {
