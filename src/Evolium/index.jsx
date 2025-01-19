@@ -5,11 +5,14 @@ export function Evolium() {
     <>
       <Container
         papel="Líder do Projeto"
-        eq="Evolium(Angola)"
-        vision="O projeto visou modernizar a experiência digital do Ministério do Planeamento de Angola, promovendo maior eficiência na comunicação institucional e acessibilidade para cidadãos e colaboradores."
-        problem="A plataforma anterior apresentava navegação confusa, design desatualizado e falta de funcionalidades que atendiam às necessidades específicas dos usuários, prejudicando o acesso às informações e serviços."
-        process="Iniciamos com uma pesquisa detalhada para compreender as necessidades dos usuários e objetivos do Ministério. Foram realizados workshops de co-criação, testes de usabilidade e análises heurísticas. O design foi iterado em ciclos, garantindo soluções centradas no usuário e alinhadas aos valores institucionais."
-        solucion="Implementamos um redesign completo da interface, priorizando um layout responsivo, navegação intuitiva e integração de funcionalidades essenciais, como busca otimizada e painéis interativos para acesso rápido a dados e relatórios."
+        eq="Ocaso Group(Angola)"
+        vision="O projeto Tradu-lo é uma plataforma digital criada para facilitar a solicitação e gerenciamento de traduções de documentos. O objetivo foi oferecer uma solução eficiente e acessível para pessoas e empresas que precisam de serviços de tradução profissional em Angola."
+        problem="Os processos tradicionais de solicitação de tradução eram burocráticos e pouco eficientes, envolvendo longos prazos de resposta e falta de transparência nos custos. Além disso, a ausência de uma interface digital centralizada limitava a acessibilidade e a conveniência para os clientes."
+        process="Com foco na experiência do usuário, seguimos estas etapas:
+        Pesquisa de mercado: análise de concorrentes e entrevistas com potenciais usuários para identificar dores e expectativas.
+        Prototipagem rápida: criação de wireframes e protótipos funcionais para mapear fluxos de navegação.
+        Testes iterativos: validação contínua com usuários para ajustar funcionalidades como solicitação de orçamento e rastreamento de progresso."
+        solucion="Foi desenvolvida uma plataforma web responsiva, que permite aos usuários solicitar orçamentos, carregar documentos, acompanhar o status das traduções e receber notificações em tempo real. A interface foi projetada com foco em simplicidade e clareza, priorizando a experiência do cliente."
       />
     </>
   );

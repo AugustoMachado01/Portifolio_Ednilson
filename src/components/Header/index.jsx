@@ -1,4 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
+
+
 import styles from "./styles.module.css";
 import Ministery from "../../assets/ministerio-image.png";
 import Evoluim from "../../assets/evolium-image.png";
@@ -115,7 +117,7 @@ export function Container({ papel, eq, vision, problem, process, solucion }) {
           <p>{solucion}</p>
 
           <span>Ver o site</span>
-          <a href="">{trabalhoAtual.titulo}</a>
+          <a href={trabalhoAtual.link}>{trabalhoAtual.titulo} q</a>
         </div>
       </section>
 

@@ -1,4 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import ScrollToTop from "./components/ScrollToTop";
+
 import "./App.css";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
@@ -13,6 +16,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
         <Header />
         <main>
           <Routes>
