@@ -5,14 +5,14 @@ export function Evolium() {
     <>
       <Container
         papel="Líder do Projeto"
-        eq="Ocaso Group(Angola)"
-        vision="O projeto Tradu-lo é uma plataforma digital criada para facilitar a solicitação e gerenciamento de traduções de documentos. O objetivo foi oferecer uma solução eficiente e acessível para pessoas e empresas que precisam de serviços de tradução profissional em Angola."
-        problem="Os processos tradicionais de solicitação de tradução eram burocráticos e pouco eficientes, envolvendo longos prazos de resposta e falta de transparência nos custos. Além disso, a ausência de uma interface digital centralizada limitava a acessibilidade e a conveniência para os clientes."
-        process="Com foco na experiência do usuário, seguimos estas etapas:
-        Pesquisa de mercado: análise de concorrentes e entrevistas com potenciais usuários para identificar dores e expectativas.
-        Prototipagem rápida: criação de wireframes e protótipos funcionais para mapear fluxos de navegação.
-        Testes iterativos: validação contínua com usuários para ajustar funcionalidades como solicitação de orçamento e rastreamento de progresso."
-        solucion="Foi desenvolvida uma plataforma web responsiva, que permite aos usuários solicitar orçamentos, carregar documentos, acompanhar o status das traduções e receber notificações em tempo real. A interface foi projetada com foco em simplicidade e clareza, priorizando a experiência do cliente."
+        eq="Evolium(Angola)"
+        vision="Evolium Angola é uma plataforma inovadora voltada para a transformação digital de negócios angolanos, oferecendo soluções tecnológicas para otimizar processos e promover o crescimento sustentável das empresas no mercado local."
+        problem="Empresas enfrentavam dificuldades em integrar ferramentas digitais eficientes em suas operações, o que impactava diretamente a produtividade, o alcance e a competitividade no mercado. Havia uma lacuna entre as necessidades das empresas e a oferta de soluções personalizadas e acessíveis."
+        process="O desenvolvimento seguiu uma abordagem colaborativa e iterativa, com etapas como:
+        Pesquisa de mercado: análise das principais dores das empresas locais e identificação de oportunidades.
+        Estratégia de UX/UI: criação de fluxos de navegação simples e módulos personalizáveis para diferentes tipos de negócios.
+        Testes contínuos: validação da experiência do usuário e refinamento da interface."
+        solucion="Foi criada uma plataforma dinâmica, com uma interface moderna. O design foi pensado para garantir usabilidade e escalabilidade, permitindo que empresas de diversos portes se adaptassem facilmente."
       />
     </>
   );

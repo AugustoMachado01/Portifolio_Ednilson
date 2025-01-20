@@ -11,7 +11,10 @@ export function Header() {
 
   return (
     <section className={styles.section_container}>
+      <Link to="/" className={styles.logo}>
       <h3>Ednilson Araujo</h3>
+      </Link>
+     
       <button
         className={`${styles.menu_button} ${isMenuOpen ? styles.menu_open : ""}`}
         onClick={toggleMenu}

@@ -117,7 +117,7 @@ export function Container({ papel, eq, vision, problem, process, solucion }) {
           <p>{solucion}</p>
 
           <span>Ver o site</span>
-          <a href={trabalhoAtual.link}>{trabalhoAtual.titulo} q</a>
+          <a href={trabalhoAtual.link}>{trabalhoAtual.titulo}</a>
         </div>
       </section>
 
